@@ -1,0 +1,39 @@
+#habilidades {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--cor-primaria-marromEscuro);
+}
+
+.titulo {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: var(--fonte-poppins);
+    font-size: 24px;
+    color: var(--cor-do-titulo-marromClaro);
+}
+
+.titulo h1 {
+    border-bottom: 5px solid var(--cor-do-titulo-marromClaro);
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+@media screen and (max-width: 600px) {
+    .titulo {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 70%;
+    }
+}

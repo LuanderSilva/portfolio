@@ -1,0 +1,65 @@
+
+.fixed-icons {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 250px;
+    right: 1700px;
+    gap: 10px;
+}
+
+.hover-icon {
+    transition: 0.5s;
+}
+
+.hover-icon:hover {
+    transform: scale(1.5);
+}
+
+@media screen and (max-width: 1664px) {
+    .fixed-icons {
+        right: 1500px;
+    }
+}
+
+@media screen and (max-width: 1570px) {
+    .fixed-icons {
+        right: 1400px;
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    .fixed-icons {
+        right: 1300px;
+    }
+}
+
+@media screen and (max-width: 1370px) {
+    .fixed-icons {
+        right: 1250px;
+    }
+}
+
+@media screen and (max-width: 1310px) {
+    .fixed-icons {
+        right: 1150px;
+    }
+}
+
+@media screen and (max-width: 1210px) {
+    .fixed-icons {
+        right: 1100px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .fixed-icons {
+        right: 1050px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .fixed-icons {
+        display: none;
+    }
+}

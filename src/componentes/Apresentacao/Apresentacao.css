@@ -1,0 +1,156 @@
+
+.secao-apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--cor-primaria-marromEscuro);
+}
+
+.secao-apresentacao-conteudo {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.secao-apresentacao-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-right: 100px;
+}
+
+.titulo-nome {
+    font-family: var(--fonte-poppins);
+    font-size: 24px;
+    font-weight: 300;
+    color: var(--cor-do-titulo-marromClaro);
+    /* width: 80%; */
+}
+
+.texto {
+    font-family: var(--fonte-roboto);
+    font-size: 18px;
+    color: var(--cor-do-texto);
+}
+
+.secao-apresentacao-imagem img{
+    height: 130%;
+    margin-right: 25px;
+}
+
+.link-linkedin {
+    text-decoration: none;
+    background-color: var(--cor-primaria-marromClaro);
+    color: var(--cor-do-texto);
+    margin-top: 7px;
+    padding: 10px;
+    width: 20%;
+    border-radius: 5px;
+    text-align: center;
+    font-family: var(--fonte-poppins);
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+.link-linkedin:hover {
+    background-color: #704f4f;
+    color: #FFF;
+}
+
+@media screen and (max-width: 1000px) {
+    .secao-apresentacao-conteudo {
+        gap: 0px;
+    }
+
+    .secao-apresentacao-escrito {
+        margin-right: 0;
+    }
+
+    .titulo-nome {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .secao-apresentacao-escrito {
+        margin-left: 55px;
+    }
+
+    .titulo-nome {
+        font-size: 20px;
+    }
+
+    .texto {
+        font-size: 16px;
+    }
+
+    .secao-apresentacao-imagem {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .link-linkedin {
+        width: 25%;
+    }
+
+}
+
+@media screen and (max-width: 725px) {
+    .titulo-nome {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 682px) {
+    .titulo-nome {
+        width: 90%;
+    }
+
+    .link-linkedin {
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    .secao-apresentacao-imagem {
+        display: none;
+    }
+
+    .titulo-nome {
+        width: 100%;
+    }
+
+    .secao-apresentacao-escrito {
+        margin-left: 0px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .titulo-nome {
+        font-size: 17px;
+    }
+
+    .texto {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .titulo-nome {
+        font-size: 15px;
+    }
+
+    .texto {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 466px) {
+    .titulo-nome {
+        font-size: 14px;
+    }
+}

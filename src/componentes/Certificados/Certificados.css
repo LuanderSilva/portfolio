@@ -1,0 +1,71 @@
+#certificados {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--cor-secundaria-marromClaro);
+}
+
+.certificados-titulo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: var(--fonte-poppins);
+    font-size: 24px;
+    color: var(--cor-do-titulo-marromEscuro);
+}
+
+.certificados-titulo h1 {
+    border-bottom: 5px solid var(--cor-do-titulo-marromEscuro);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}
+
+.card-container a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.card-container a:hover {
+    transform: scale(1.1);
+}
+
+.card-certificados {
+    background-color: #745757;
+    padding: 100px;
+    border-radius: 15px;
+}
+
+.card-certificados p {
+    font-family: var(--fonte-roboto);
+    color: var(--cor-do-texto);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px) {
+    .certificados-titulo {
+        font-size: 20px;
+    }
+
+    .card-certificados {
+        padding: 70px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-certificados {
+        padding: 70px 40px;
+    }
+
+    .card-certificados p {
+        font-size: 16px;
+    }
+}
+

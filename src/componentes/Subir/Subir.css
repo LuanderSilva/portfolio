@@ -1,0 +1,17 @@
+.fixed-icons-subir {
+    position: fixed;
+    top: 88vh;
+    right: 100px;
+}
+
+.fixed-icons-subir ul{
+    list-style-type: none;
+}
+
+
+
+@media screen and (max-width: 925px) {
+    .fixed-icons-subir {
+        display: none;
+    }
+}

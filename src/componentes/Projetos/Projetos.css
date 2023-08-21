@@ -1,0 +1,119 @@
+#projetos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+}
+
+.projetos-titulo {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: var(--cor-primaria-marromEscuro);
+    font-family: var(--fonte-poppins);
+    font-size: 24px;
+    color: var(--cor-do-titulo-marromClaro);
+    width: 100%;
+}
+
+.projetos-titulo h1 {
+    border-bottom: 5px solid var(--cor-do-titulo-marromClaro);
+}
+
+.projetos-conteudo {
+    background-color: var(--cor-secundaria-marromClaro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 77vh;
+    width: 100%;
+}
+
+.thumb{
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.thumb:hover {
+    transform: scale(1.1);
+}
+
+.text {
+    text-align: center;
+    margin-top: 10px;
+    font-family: var(--fonte-poppins);
+    font-size: 15px;
+    color: var(--cor-do-texto);
+}
+
+.projetos-numbers1-2, .projetos-numbers3-4 {
+    display: flex;
+    gap: 70px;
+}
+
+.projetos-numbers3-4 {
+    margin-top: 30px;
+}
+
+.thumb-embreve {
+    width: 250px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+    .projetos-conteudo {
+        height: 100vh;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .projetos-titulo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .projetos-numbers1-2, .projetos-numbers3-4 {
+        flex-direction: column;
+    }
+
+    .projetos-numbers1-2 {
+        margin-top: 10px;
+    }
+
+    .projetos-numbers3-4 {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .thumb-embreve {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 412px) {
+    .thumb-embreve {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .thumb {
+        height: 160px;
+    }
+
+    .projetos-numbers1-2 {
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .thumb-embreve {
+        margin-right: 30px;
+    }
+}

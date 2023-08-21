@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-primaria-marromClaro: #815B5B;
+  --cor-primaria-marromEscuro: #594545;
+  --cor-secundaria-marromClaro: #9E7676;
+
+  --cor-do-texto: #E3DEDE;
+  --cor-do-titulo-marromClaro: #B08181;
+  --cor-do-titulo-marromEscuro: #594545;
+
+  --fonte-poppins: 'Poppins', sans-serif;
+  --fonte-roboto: 'Roboto', sans-serif;
+
+} 
+
+.rolagem {
+  cursor: pointer;
+}
