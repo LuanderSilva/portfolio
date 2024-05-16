@@ -1,0 +1,73 @@
+#s-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 60vh;
+    padding: 0 30px;
+}
+
+.presentation-title {
+    color: #fff;
+    font-size: 2.2rem;
+    max-width: 700px;
+}
+
+.presentation-title span {
+    color: #0052CC;
+}
+
+.presentation-button {
+    padding: 15px;
+    width: 180px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0052CC;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    z-index: 0;
+}
+
+.presentation-button::before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #00ffd5, #002bff, #7a00ff, #ff00c8);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: brilho 20s linear infinite;
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+    border-radius: 5px;
+}
+
+.presentation-button:hover::before {
+    opacity: 0;
+}
+
+.presentation-button::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #0052CC;
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+}
+
+@keyframes brilho {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
