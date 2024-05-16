@@ -1,0 +1,120 @@
+.header-container {
+    background-color: #16161A;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+    padding: 0 30px;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.img-logo {
+    height: 35px;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 15px;
+}
+
+.list-item {
+    position: relative;
+}
+
+.list-item:nth-child(3) {
+    margin-right: 10px;
+}
+
+.link-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-decoration: none;
+    color: inherit;
+}
+
+.icon {
+    font-size: 1.5rem;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    font-size: .8rem;
+    transition: all 0.3s ease;
+    background-color: #0052CC;
+    font-family: 'Poppins';
+}
+
+.list-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    bottom: -40px;
+}
+
+/* button */
+
+.nav-button {
+    padding: 17px;
+    width: 130px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #0052CC;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: .9rem;
+    cursor: pointer;
+    transition: .5s;
+    overflow: hidden;
+    position: relative;
+}
+
+.nav-button::before,
+.nav-button::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #0052CC;
+    transition: 1s ease;
+}
+
+.nav-button::before {
+    top: -2em;
+    left: -2em;
+}
+
+.nav-button::after {
+    left: calc(100% + 2em);
+    top: calc(100% + 2em);
+}
+
+.nav-button:hover::before,
+.nav-button:hover::after {
+    height: 410px;
+    width: 410px;
+}
