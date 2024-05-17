@@ -14,8 +14,8 @@ function Presentation() {
     }, [])
 
     return (
-        <section id='s-presentation' className='scroll-reveal'>
-            <h1 className='presentation-title'>Olá, seja bem-vindo! Me chamo <span>Luander</span> e sou um Front-End Developer.</h1>
+        <section id='s-presentation'>
+            <h1 className='presentation-title scroll-reveal'>Olá, seja bem-vindo! Me chamo <span>Luander</span> e sou um Front-End Developer.</h1>
             <TypeAnimation
                 sequence={[
                     'Gosto de desenvolver coisas e isso para mim é mais do que uma atividade. É uma paixão!',
