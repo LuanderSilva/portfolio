@@ -1,0 +1,95 @@
+#s-about {
+    padding: 120px;
+    padding-bottom: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card-container {
+    border: 2px solid #32304A;
+    background-color: #242629;
+    border-radius: 5px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.bg-img {
+    background-color: #2A2C30;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 5px;
+    margin-left: 40px;
+    width: 250%;
+    height: 400px;
+}
+
+.img-profile {
+    max-width: 100%;
+}
+
+.content {
+    margin-left: 60px;
+}
+
+.title-sobre {
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.title-nome {
+    margin: 15px 0 5px 0;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.title-frontend {
+    color: #0052CC;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.text {
+    margin: 20px 0;
+    color: #94A1B2;
+    font-weight: 300;
+    letter-spacing: 1px;
+    max-width: 95%;
+}
+
+/*  icons */
+
+.icon-list-about {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.link-icon-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    color: inherit;
+    border-radius: 5px;
+    border: 2px solid #0052CC;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.list-item-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.list-item-about:hover .link-icon-about {
+    transform: translateY(-10px);
+}
