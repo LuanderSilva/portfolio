@@ -2,6 +2,7 @@ import Header from "./componentes/Header/header"
 import Presentation from "./componentes/Presentation/presentation"
 import About from "./componentes/About/about"
 import Projects from "./componentes/Projects/projects"
+import Skills from "./componentes/Skills/skills"
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Presentation />
         <About />
         <Projects />
+        <Skills />
       </main>
     </>
   )
