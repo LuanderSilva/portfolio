@@ -1,0 +1,21 @@
+.card-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e1e22;
+    flex-grow: 1;
+    width: 20%;
+    height: 130px;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #3b3b3b;
+    transition: all 0.5s ease;
+}
+
+.card-item:hover {
+    border: 1px solid #0052CC;
+}
+
+.card-item img {
+    height: 60px;
+}
