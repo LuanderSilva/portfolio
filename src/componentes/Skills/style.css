@@ -1,0 +1,38 @@
+#s-skills {
+    padding: 80px 30px;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-text-skills {
+    position: relative
+}
+
+.content-text-skills,
+.skills-cards {
+    margin-top: 20px;
+}
+
+.content-text-skills h1 {
+    color: #fff;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.content-text-skills p {
+    color: #94A1B2;
+    font-size: 1rem;
+    position: absolute;
+    width: 500px;
+    letter-spacing: 1px;
+    line-height: 25px;
+}
+
+.skills-cards {
+    display: flex;
+    width: 580px;
+    flex-wrap: wrap;
+}
