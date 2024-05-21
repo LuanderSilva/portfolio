@@ -1,5 +1,5 @@
 #s-about {
-    padding: 120px;
+    padding-top: 120px;
     padding-bottom: 80px;
     padding-left: 30px;
     padding-right: 30px;
@@ -61,7 +61,7 @@
     max-width: 95%;
 }
 
-/*  icons */
+/*  ---Ícones--- */
 
 .icon-list-about {
     display: flex;
@@ -92,4 +92,33 @@
 
 .list-item-about:hover .link-icon-about {
     transform: translateY(-10px);
+}
+
+/* ---Responsividade--- */
+
+@media (max-width: 950px) {
+    .bg-img {
+        display: none;
+    }
+
+    .content {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 615px) {
+    .text {
+        font-size: .9rem;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: 410px) {
+    #s-about {
+        padding-top: 100px;
+    }
+
+    .card-container {
+        height: 550px;
+    }
 }
