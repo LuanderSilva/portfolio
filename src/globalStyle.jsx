@@ -15,6 +15,7 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #16161A;
         width: 100%;
         font-family: 'Roboto', sans-serif;
+        overflow-x: hidden;
     }
 
     /* largura */
