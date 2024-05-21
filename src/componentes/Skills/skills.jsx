@@ -1,5 +1,5 @@
 import './style.css'
-import Skillcard from '../../SkillCard/skillcard'
+import Skillcard from '../SkillCard/skillcard'
 import { useState } from 'react'
 
 function Skills() {
