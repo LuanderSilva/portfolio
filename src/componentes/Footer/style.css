@@ -1,0 +1,13 @@
+.footer-container {
+    display: flex;
+    justify-content: center;
+    background-color: #131415;
+    padding: 20px;
+}
+
+.footer-container p {
+    color: #fff;
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
