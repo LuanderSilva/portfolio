@@ -67,7 +67,30 @@
 }
 
 @keyframes brilho {
-    0% { background-position: 0 0; }
-    50% { background-position: 400% 0; }
-    100% { background-position: 0 0; }
+    0% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 400% 0;
+    }
+
+    100% {
+        background-position: 0 0;
+    }
+}
+
+/* ---Responsividade--- */
+
+@media (max-width: 750px) {
+    .presentation-title {
+        font-size: 1.9rem;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 360px) {
+    #s-presentation {
+        height: 80vh;
+    }
 }
