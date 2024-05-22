@@ -1,4 +1,5 @@
 import './style.css';
+import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub, faInstagram } from '@fortawesome/free-brands-svg-icons';
@@ -27,24 +28,26 @@ function Header() {
                     <ul className='nav-list'>
                         <li className='list-item'>
                             <a className='link-icon' href="https://www.linkedin.com/in/luandersilva" target='_blank'>
-                                <FontAwesomeIcon icon={faLinkedinIn} className='icon'/>
+                                <FontAwesomeIcon icon={faLinkedinIn} className='icon' />
                             </a>
                             <div className='tooltip'>Linkedin</div>
                         </li>
                         <li className='list-item'>
                             <a className='link-icon' href="https://github.com/LuanderSilva" target='_blank'>
-                                <FontAwesomeIcon icon={faGithub} className='icon'/>
+                                <FontAwesomeIcon icon={faGithub} className='icon' />
                             </a>
                             <div className='tooltip'>GitHub</div>
                         </li>
                         <li className='list-item'>
                             <a className='link-icon' href="https://www.instagram.com/luander41/" target='_blank'>
-                                <FontAwesomeIcon icon={faInstagram} className='icon'/>
+                                <FontAwesomeIcon icon={faInstagram} className='icon' />
                             </a>
                             <div className='tooltip'>Instagram</div>
                         </li>
                         <li>
-                            <button className='nav-button'>Contato</button>
+                            <Link to="/contato">
+                                <button className='nav-button'>Contato</button>
+                            </Link>
                         </li>
                     </ul>
 
@@ -62,30 +65,32 @@ function Header() {
                         <ul className='mobile-nav-list'>
                             <li className='list-item-mobile'>
                                 <a className='link-icon' href="https://www.linkedin.com/in/luandersilva" target='_blank'>
-                                    <FontAwesomeIcon icon={faLinkedinIn} className='icon'/>
+                                    <FontAwesomeIcon icon={faLinkedinIn} className='icon' />
                                 </a>
                                 <div className='tooltip-mobile'>Linkedin</div>
                             </li>
                             <li className='list-item-mobile'>
                                 <a className='link-icon' href="https://github.com/LuanderSilva" target='_blank'>
-                                    <FontAwesomeIcon icon={faGithub} className='icon'/>
+                                    <FontAwesomeIcon icon={faGithub} className='icon' />
                                 </a>
                                 <div className='tooltip-mobile'>GitHub</div>
                             </li>
                             <li className='list-item-mobile'>
                                 <a className='link-icon' href="https://www.instagram.com/luander41/" target='_blank'>
-                                    <FontAwesomeIcon icon={faInstagram} className='icon'/>
+                                    <FontAwesomeIcon icon={faInstagram} className='icon' />
                                 </a>
                                 <div className='tooltip-mobile'>Instagram</div>
                             </li>
                             <li className='list-item-mobile-button'>
-                                <button className='nav-button'>Contato</button>
+                                <Link to="/contato">
+                                    <button className='nav-button'>Contato</button>
+                                </Link>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
-        </header>
+        </header >
     );
 }
 
