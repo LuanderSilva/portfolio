@@ -69,6 +69,7 @@ function Skills() {
             <div className='grid-layout content-container'>
                 <div className="content-text-skills">
                     <h1>Conhecimentos</h1>
+                    <span className='border-skills'></span>
                     <p>{defaultDescription}</p>
                 </div>
 
