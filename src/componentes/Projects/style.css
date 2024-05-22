@@ -56,6 +56,7 @@
     grid-column-end: 2;
     border: 1px solid #F1D0D5;
     border-radius: 5px;
+    height: 350px;
     position: relative;
     overflow: hidden;
 }
@@ -100,4 +101,32 @@
     font-size: 1.4rem;
     font-weight: 500;
     z-index: 3;
+}
+
+/* ---Responsividade--- */
+
+@media (max-width: 850px) {
+    .projects {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 750px) {
+    .title-projects h1{
+        font-size: 1.9rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .description-project {
+        top: 90%;
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 325px) {
+    .description-project {
+        top: 87%;
+    }
 }
