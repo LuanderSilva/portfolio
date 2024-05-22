@@ -8,7 +8,7 @@
 }
 
 .content-text-skills {
-    position: relative
+    position: relative;
 }
 
 .content-text-skills,
@@ -35,4 +35,47 @@
     display: flex;
     width: 580px;
     flex-wrap: wrap;
+}
+
+/* ---Responsividade--- */
+/* 1035 */
+@media (max-width: 1035px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .content-text-skills p {
+        width: 100%;
+    }
+
+    .skills-cards {
+        margin-top: 70px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 770px) {
+    .content-text-skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content-text-skills h1 {
+        margin-bottom: 10px;
+    }
+
+    .border-skills {
+        background-color: #0052CC;
+        display: inline-block;
+        height: 1px;
+        width: 80px;
+    }
+}
+
+@media (max-width: 750px) {
+    .content-text-skills h1 {
+        font-size: 1.9rem;
+    }
 }
