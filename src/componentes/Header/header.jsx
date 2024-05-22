@@ -23,7 +23,9 @@ function Header() {
         <header className='header-container'>
             <div className='grid-layout'>
                 <nav className='nav-container'>
-                    <img className='img-logo' src="./imagens/logo.png" alt="Minha logo - Luander" />
+                    <Link to="/">
+                        <img className='img-logo' src="./imagens/logo.png" alt="Minha logo - Luander" />
+                    </Link>
 
                     <ul className='nav-list'>
                         <li className='list-item'>
