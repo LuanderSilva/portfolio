@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import './style.css'
 import { TypeAnimation } from 'react-type-animation';
 import ScrollReveal from 'scrollreveal';
+import { Link } from 'react-router-dom';
 
 function Presentation() {
     useEffect(() => {
@@ -31,7 +32,10 @@ function Presentation() {
                     fontFamily: 'Roboto, sans-serif'
                 }}
             />
-            <button className='presentation-button'>Contato</button>
+            
+            <Link to="/contato">
+                <button className='presentation-button'>Contato</button>
+            </Link>
         </section>
     )
 }
