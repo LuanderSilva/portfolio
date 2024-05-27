@@ -16,6 +16,10 @@ export const GlobalStyle = createGlobalStyle`
         width: 100%;
         font-family: 'Roboto', sans-serif;
         overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        position: relative;
     }
 
     /* largura */
