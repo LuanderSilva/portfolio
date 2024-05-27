@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import App from './App'
-import Contato from './pages/Contato/contanto'
+import Contato from './pages/Contato/contato'
 
 function AppRoutes() {
     return (
