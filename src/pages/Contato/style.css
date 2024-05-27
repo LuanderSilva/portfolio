@@ -1,0 +1,128 @@
+#s-contact {
+    margin-top: 100px;
+    padding: 0 30px;
+}
+
+.contact-title h1 {
+    font-size: 2.2rem;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.inputs-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 50%;
+}
+
+.campo-nome,
+.campo-email,
+.campo-mensagem {
+    position: relative;
+}
+
+.input-campo {
+    padding: 15px 10px;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    width: 100%;
+    height: 55px;
+    border: none;
+    border-radius: 5px;
+    border: 1.5px solid #1a73e8;
+}
+
+.error {
+    position: relative;
+    top: 10px;
+    color: #dd3838;
+}
+
+.label {
+    position: absolute;
+    transform: translateY(1rem);
+    transition: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    top: 0;
+    left: 15px; 
+    font-family: 'Poppins';
+}
+
+.input-campo:focus,
+.msn-box:focus {
+    outline: none;
+}
+
+.input-campo:focus ~ .label,
+.input-campo:not(:placeholder-shown) ~ .label,
+.msn-box:focus ~ .label,
+.msn-box:not(:placeholder-shown) ~ .label {
+    transform: translateY(-120%) scale(0.8);
+    font-size: 1.3rem;
+    color: #FFF;
+}
+
+.input-campo::placeholder,
+.msn-box::placeholder {
+    opacity: 0;
+}
+
+.input-campo:focus ~ .label,
+.input-campo:not(:placeholder-shown) ~ .label {
+    left: -6px;
+}
+
+.msn-box:focus ~ .label,
+.msn-box:not(:placeholder-shown) ~ .label {
+    left: -25px; 
+}
+
+/* ---Right - textarea--- */
+
+.campo-mensagem  {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 50%;
+}
+
+.msn-box {
+    width: 100%;
+    height: calc(110px + 50px);
+    border: none;
+    border-radius: 5px;
+    resize: vertical;
+    padding: 15px 10px;
+    font-family: 'Roboto';
+    font-size: 1rem;
+    border: 1.5px solid #1a73e8;
+}
+
+.button-form {
+    width: 30%;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #0052CC;
+    color: #fff;
+    font-size: 1rem;
+    font-family: 'Roboto';
+    transition: .5s;
+}
+
+.button-form:hover {
+    background-color: #003c96;
+}
+
+
