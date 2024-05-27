@@ -1,6 +1,6 @@
 #s-contact {
-    margin-top: 100px;
-    padding: 0 30px;
+    margin-top: 80px;
+    padding: 50px 30px;
 }
 
 .contact-title h1 {
@@ -113,6 +113,7 @@
     padding: 15px;
     border-radius: 5px;
     margin-top: 20px;
+    margin-bottom: 50px;
     cursor: pointer;
     background-color: #0052CC;
     color: #fff;
@@ -123,6 +124,14 @@
 
 .button-form:hover {
     background-color: #003c96;
+}
+
+/* ---Footer--- */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 
