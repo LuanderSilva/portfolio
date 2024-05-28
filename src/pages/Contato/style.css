@@ -1,5 +1,5 @@
 #s-contact {
-    margin-top: 80px;
+    margin-top: 50px;
     padding: 50px 30px;
 }
 
@@ -55,6 +55,7 @@
     top: 0;
     left: 15px; 
     font-family: 'Poppins';
+    white-space: nowrap;
 }
 
 .input-campo:focus,
@@ -108,7 +109,7 @@
 }
 
 .button-form {
-    width: 30%;
+    width: 170px;
     border: none;
     padding: 15px;
     border-radius: 5px;
@@ -132,6 +133,38 @@
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+/* ---Responsividade--- */
+
+@media (max-width: 750px) {
+    .contact-title h1{
+        font-size: 1.9rem;
+    }
+
+    .form-container {
+        flex-direction: column;
+    }
+
+    .inputs-form {
+        width: 100%;
+    }
+
+    .campo-mensagem  {
+        margin-top: 23px;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .button-form  {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    #s-contact {
+        margin-top: 5px;
+    }
 }
 
 
