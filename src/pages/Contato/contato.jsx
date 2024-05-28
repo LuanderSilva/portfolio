@@ -3,6 +3,7 @@ import { useEffect } from "react"
 import { useForm } from "react-hook-form"
 import Swal from "sweetalert2"
 import Header from "../../componentes/Header/header"
+import Footer from "../../componentes/Footer/footer"
 
 function Contato({ title }) {
     // ---Título da página---
@@ -78,6 +79,9 @@ function Contato({ title }) {
                     </div>
                 </section>
             </main>
+            <div className="footer">
+                <Footer />
+            </div>
         </>
     )
 }
