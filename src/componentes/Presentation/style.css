@@ -4,7 +4,7 @@
     justify-content: center;
     text-align: center;
     align-items: center;
-    height: 70vh;
+    height: 90vh;
     padding: 0 30px;
 }
 
@@ -83,6 +83,10 @@
 /* ---Responsividade--- */
 
 @media (max-width: 750px) {
+    #s-presentation {
+        margin-top: 70px;
+    }
+
     .presentation-title {
         font-size: 1.9rem;
         max-width: 600px;
@@ -91,6 +95,6 @@
 
 @media (max-width: 320px) {
     #s-presentation {
-        height: 80vh;
+        height: 110vh;
     }
 }
