@@ -42,4 +42,4 @@ A página inicial é composta por quatro seções principais:
 
 ---
 
-Esse README é uma visão geral do meu portfólio e das tecnologias utilizadas. Sinta-se à vontade para explorar e entrar em contato comigo. Vale ressaltar que o design do meu portfólio foi inspirado no portfólio do @iuricode
+Esse README é uma visão geral do meu portfólio e das tecnologias utilizadas. Sinta-se à vontade para explorar e entrar em contato comigo. Vale ressaltar que o design do meu portfólio foi inspirado no portfólio do <a href="https://github.com/iuricode">Iuri Code</a>
