@@ -1,7 +1,7 @@
 .header-container {
     background-color: #16161A;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
     z-index: 999;
     padding: 0 30px;
 }
