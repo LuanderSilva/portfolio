@@ -1,6 +1,13 @@
 #s-contact {
-    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     padding: 50px 30px;
+}
+
+.scroll-contact {
+    width: 100%;
 }
 
 .contact-title h1 {
@@ -138,6 +145,10 @@
 /* ---Responsividade--- */
 
 @media (max-width: 750px) {
+    #s-contact {
+        margin-top: 70px;
+    }
+
     .contact-title h1{
         font-size: 1.9rem;
     }
@@ -163,12 +174,22 @@
 
 @media (max-width: 500px) {
     #s-contact {
-        margin-top: 5px;
+        margin-top: 150px;
     }
 
     .contact-title {
        display: flex;
        justify-content: center;
+    }
+
+    .button-form {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 320px) {
+    #s-contact {
+        height: 150vh;
     }
 }
 
