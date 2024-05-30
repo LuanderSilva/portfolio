@@ -1,5 +1,5 @@
 #s-about {
-    padding-top: 120px;
+    padding-top: 10px;
     padding-bottom: 80px;
     padding-left: 30px;
     padding-right: 30px;
@@ -118,10 +118,6 @@
 }
 
 @media (max-width: 410px) {
-    #s-about {
-        padding-top: 100px;
-    }
-
     .card-container {
         height: 550px;
     }
