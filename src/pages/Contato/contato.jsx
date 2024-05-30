@@ -2,6 +2,7 @@ import "./style.css"
 import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 import sendEmail from "./sendEmail"
+import ScrollReveal from 'scrollreveal';
 import Header from "../../componentes/Header/header"
 import Footer from "../../componentes/Footer/footer"
 import Loading from "./Loading/loading"
@@ -12,7 +13,20 @@ function Contato({ title }) {
         document.title = title
     }, [title])
 
-    // ---Validação---
+    // ---ScrollReveal---
+
+    useEffect(() => {
+        ScrollReveal().reveal('.scroll-contact', {
+            origin: 'top',
+            delay: 300,
+            distance: "50px",
+            duration: 2000,
+            viewFactor: 0.7
+        })
+    }, [])
+
+
+    // ---Validação form---
 
     const { register, handleSubmit, formState: { errors }, reset } = useForm()
     const [loading, setLoading] = useState(false);
@@ -30,7 +44,7 @@ function Contato({ title }) {
 
                 {!loading && (
                     <section id="s-contact">
-                        <div className="grid-layout">
+                        <div className="grid-layout scroll-contact">
                             <div className="contact-title">
                                 <h1>Envie um e-mail</h1>
                             </div>
