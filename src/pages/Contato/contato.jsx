@@ -2,7 +2,6 @@ import "./style.css"
 import { useEffect, useState } from "react"
 import { useForm } from "react-hook-form"
 import sendEmail from "./sendEmail"
-import ScrollReveal from 'scrollreveal';
 import Header from "../../componentes/Header/header"
 import Footer from "../../componentes/Footer/footer"
 import Loading from "./Loading/loading"
@@ -12,19 +11,6 @@ function Contato({ title }) {
     useEffect(() => {
         document.title = title
     }, [title])
-
-    // ---ScrollReveal---
-
-    useEffect(() => {
-        ScrollReveal().reveal('.scroll-contact', {
-            origin: 'top',
-            delay: 300,
-            distance: "50px",
-            duration: 2000,
-            viewFactor: 0.7
-        })
-    }, [])
-
 
     // ---Validação form---
 
